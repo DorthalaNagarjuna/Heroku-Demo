@@ -62,6 +62,11 @@ input {
 }
 .footer{
 	position: absolute;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
 	top: 40%;
 	left: 50%;
 	margin: -150px 0 0 -150px;
