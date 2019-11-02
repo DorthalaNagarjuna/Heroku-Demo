@@ -25,14 +25,15 @@
        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
    </form>
 
-  <br>
-  <br>
-  {{ prediction_text }}
-       <br>
-       <br>
-       <br>
-       <br>
-       
+ {% if nag==1 %}
+      <h4>Diabetic patient</h4>
+      <img src="static/images/sad.gif" width="100" height="90" />
+      <h3>consult doctor online</h3>
+   {% elif nag==0 %}
+      <h4>Non-Diabetic patient</h4>
+      <img src="static/images/5rkZ.gif" width="100" height="90" />
+      <h3>have a nice day</h3>
+   {% endif %} 
 <div class="footer">
   <p>Copyrights @ 2019, Designed by <br>@Deep Algorithms.</p>
 </div>
